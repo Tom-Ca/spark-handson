@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "spark-handson"
+name = "spark-handson2"
 version = "0.1.0"
 description = "Résolvez les exercices"
 authors = ["Franck Cussac"]
@@ -8,7 +8,8 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = "~3.7"
+python = "~3.8.2"
+pyspark = "3.3.0"
 
 [tool.poetry.dev-dependencies]
 pyspark = "3.3.0"
@@ -17,6 +18,7 @@ awsglue-dev = "^2021.12.30"
 
 [tool.poetry.scripts]
 wordcount = "src.fr.hymaia.exo1.main:main"
+wordcount2 = "src.fr.hymaia.exo2.main:main"
 clean = "src.fr.hymaia.exo2.spark_clean_job:main"
 aggregate = "src.fr.hymaia.exo2.spark_aggregate_job:main"
 python_udf = "src.fr.hymaia.exo4.python_udf:main"
